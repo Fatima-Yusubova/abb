@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden lg:overflow-auto">
+    <header class="fixed top-0 w-full bg-white z-60">
+      <div class="bg-[#F6F7F8]">
+        <nav class="flex justify-between p-6">
+          <ul class="hidden lg:flex gap-[20px]">
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >Sustainability reports</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >Charges and Fees</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >News</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >Procurement</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >Service network</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >Research</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-sm font-light hover:underline"
+                >Investor Relations</a
+              >
+            </li>
+          </ul>
+          <select
+            name=""
+            id=""
+            class="block text-[18px] font-sans font-medium text-[#262626] lg:hidden"
+          >
+            <option value="personal">Personal</option>
+            <option value="small">Small Business</option>
+            <option value="sme">SME</option>
+            <option value="corporate">Corporate</option>
+          </select>
+
+          <div class="flex gap-[30px] justify-between items-center">
+            <div class="hidden lg:block text-[#262626] font-sans text-sm">
+              <i class="fa-solid fa-magnifying-glass mx-2.5"></i>Search
+            </div>
+            <select name="" id="">
+              <option value="en">EN</option>
+              <option value="az">AZ</option>
+              <option value="ru">RU</option>
+            </select>
+            <span class="text-[#666] font-sans flex items-baseline gap-[10px] ">
+              <i class="fa-solid fa-phone"></i>
+              <span>937</span>
+            </span>
+          </div>
+        </nav>
+      </div>
+      <div class="flex justify-between items-center lg:border-b border-b-gray-200">
+        <div class="p-6">
+          <img src="./img/logo.svg" alt="" />
+        </div>
+        <div class="w-[60%]">
+          <ul class="hidden lg:flex gap-[20px]">
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold"
+                >Small Business</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">SME</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold"
+                >Corporate</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex p-6">
+          <a href="" class="flex items-center justify-center">
+            <div
+              style="background-image: url('img/career-portal\ 2.svg')"
+              class="bg-no-repeat w-20 h-10 bg-center bg-center]"
+            ></div>
+            <span class="text-[#0056c1] text-[15px] font-medium"
+              >Career Portal</span
+            >
+          </a>
+          <a href="" class="flex items-center justify-center">
+            <div
+              style="
+                background-image: url('img/internet-banking-signin\ 2.svg');
+              "
+              class="bg-no-repeat w-20 h-10 bg-center bg-center]"
+            ></div>
+            <span class="text-[#0056c1] text-[15px] font-medium"
+              >Internet Banking</span
+            >
+          </a>
+        </div>
+        <div class="lg:!hidden" onclick="bars()">
+          <i class="fa-solid fa-bars p-6 text-4xl" id="bar"></i>
+          <i
+            class="fa-solid fa-xmark p-6 text-4xl"
+            id="mark"
+            style="display: none"
+          ></i>
+        </div>
+      </div>
+              <div class="hidden lg:block border-b border-b-gray-200">
+                <nav class="p-6 relative">
+                  <ul class="flex gap-[20px]">
+                      <li  class="">
+              <div class=" group inline-block">
+          <a href="#" class="text-[15px] text-[#17253A] relative">
+            Cards
+            <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+          </a>
+          <div
+            class="absolute hidden group-hover:block  left-0 w-screen z-20 bg-white shadow-lg mt-6 border-t border-gray-200 pointer-events-auto">
+            <div class="flex flex-col p-4">
+              <div class="my-8">
+                <span><a href="#" class="text-[17px] text-[#262626] font-light mr-[120px]">Debit cards</a></span>
+                <span><a href="#" class="text-[17px] text-[#262626] font-light">Credit cards</a></span>
+              </div>
+              <div>
+                <a href="#" class="text-[17px] text-[#262626] font-light">
+                  Validation process for <br> TamKart debit cards
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+            </li>
+            <li>
+              <div class=" group inline-block">
+            <a href="#" class="text-[15px] text-[#17253A] relative">
+              Loans
+              <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left "></span>
+            </a>
+            <div
+              class="absolute hidden group-hover:block  left-0 w-screen z-20 bg-white shadow-lg mt-6 border-t border-gray-200 ">
+              
+                <div class="loans_com flex justify-center gap-20 p-7">
+                  <div class="left_loan border-r border-gray-200 pr-5 flex gap-[30px]">
+                    <div>
+                      <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Get a loan online</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Cash loan</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Credit limit for depositors</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Credit card limit</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Advance credit line</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Cash loan for depositors</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Cash loan</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="loan_right flex gap-[30px]">
+                <div><img src="./img/loan_img.webp" alt="" class="w-[314px]"></div>
+                <div>
+                  <h4 class="text-[24px] text-[#262626] font-medium mb-4">Apply for a loan online</h4> 
+                  <p class="text-[16px] text-[#262626] mb-10">Cash loan that fits all your needs</p>
+                  <a href="" class="py-[15px] px-[35px] border border-gray-500 rounded-md font-medium hover:bg-[#262626] hover:text-white">Find out more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            </li>
+            <li>
+               <div class=" group inline-block">
+        <a href="#" class="text-[15px] text-[#17253A] relative">
+          Online Service
+          <span class="absolute left-0  -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <div
+          class="absolute hidden   group-hover:block  left-0 w-screen z-20 bg-white shadow-lg top-15 border-t border-gray-200 ">
+          
+            <div class="loans_com flex justify-center gap-20 p-7">
+              <div class="left_loan border-r border-gray-200 pr-5 flex gap-[30px]">
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">ABB mobile-Mobile Bank</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Randevu</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Repay your loan</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">We are at your service!</a></li>
+                     <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Cash-in ATM</a></li>
+                     <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">FAQ E-service</a></li>
+
+
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">ABB Business Internet Bank</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Order a certificate of account</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">ATM</a></li>
+                     <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Payment terminal</a></li>
+                     <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Call Center 24/7</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Donate</a></li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="loan_right flex gap-[30px]">
+                <div><img src="./img/online.webp" alt="" class="w-[314px]"></div>
+                <div>
+                  <h4 class="text-[24px] text-[#262626] font-medium mb-4">Investment with BB mobile Easy for everyone</h4> 
+                  <p class="text-[16px] text-[#262626] mb-10">Take advantages of stock exchange opportunites</p>
+                  <a href="" class="py-[15px] px-[35px] border border-gray-500 rounded-md font-medium hover:bg-[#262626] hover:text-white">Find out more</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+            </li>
+            <li>
+             <div class=" group inline-block">
+            <a href="#" class="text-[15px] text-[#17253A] relative">
+              Campaigns
+              <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a>
+        </div>
+            </li>
+            <li>
+              <div class=" group inline-block">
+      
+        <a href="#" class="text-[15px] text-[#17253A] relative">
+          Cashback
+          <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <div
+          class="absolute hidden group-hover:block  left-0 w-screen z-20 bg-white shadow-lg mt-6 border-t border-gray-200 ">
+          
+            <div class="loans_com flex justify-center gap-20 p-7">
+              <div class="left_loan border-r border-gray-200 pr-5 flex gap-[30px]">
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">"Faydali cashback"</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">"Faydali max</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">QaygiCash Club</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Automatic discount</a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              <div class="loan_right flex gap-[30px]">
+                <div><img src="./img/cashback.webp" alt="" class="w-[314px]"></div>
+                <div>
+                  <h4 class="text-[24px] text-[#262626] font-medium mb-4">Investment with BB mobile Easy for everyone</h4> 
+                  <p class="text-[16px] text-[#262626] mb-10">Take advantages of stock exchange opportunites</p>
+                  <a href="" class="py-[15px] px-[35px] border border-gray-500 rounded-md font-medium hover:bg-[#262626] hover:text-white">Find out more</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+             
+            </li>
+            <li>
+               <div class="group inline-block">
+        <a href="#" class="text-[15px] text-[#17253A] relative">
+          Deposits
+          <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <div
+          class="absolute hidden group-hover:block  left-0 w-screen z-20 bg-white shadow-lg mt-6 border-t border-gray-200 ">
+            <div class="loans_com flex justify-center gap-20 p-7">
+              <div class="left_loan pr-5 flex gap-[30px]">
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">"Classic" term desposit</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Deposit insurance</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Safe deposit box </a></li>
+                 
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">DigiDeposit</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Savings mortgage loan</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            </li>
+
+            <li>
+              <div class=" group inline-block">
+            <a href="#" class="text-[15px] text-[#17253A] relative">
+              Mortgage
+              <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a>
+        </div>
+            </li>
+            <li>
+              <div class=" group inline-block">
+            <a href="#" class="text-[15px] text-[#17253A] relative">
+              Money transfers
+              <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a>
+        </div>
+            </li>
+            <li>
+              
+               <div class=" group inline-block">
+        <a href="#" class="text-[15px] text-[#17253A] relative">
+          Current account
+          <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <div
+          class="absolute hidden group-hover:block left-0 w-screen z-20 bg-white shadow-lg mt-6 border-t border-gray-200 ">
+            <div class="loans_com flex justify-center gap-20 p-7">
+              <div class="left_loan pr-5 flex gap-[30px]">
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Open DigiHesab Max</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Open a currebt accoun</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Manage your account </a></li>
+                     <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Currency exchange </a></li> 
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Open DigiHesab</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Cash Operations</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Order confirmation</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            </li>
+            <li>
+               <div class=" group inline-block">
+        <a href="#" class="text-[15px] text-[#17253A] relative">
+          Deposits
+          <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <div
+          class="absolute hidden group-hover:block   left-0 w-screen z-20 bg-white shadow-lg mt-6 border-t border-gray-200 ">
+            <div class="loans_com flex justify-center gap-20 p-7">
+              <div class="left_loan pr-5 flex gap-[30px]">
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Telephone</a></li>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Utility</a></li>                 
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><a href="" class="text-[17px] text-[#262626] font-light mb-4 pr-6 inline-block">Mobile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <li>
+              <div class=" group inline-block">
+            <a href="#" class="text-[15px] text-[#17253A] relative">
+           Charges, Fees and Standard Terms
+              <span class="absolute left-0 -bottom-6 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a>
+        </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="!duration-500 lg:hidden fixed  left-full  bg-white w-full" id="down">
+        <div class="bg-[#0056c1] p-2 my-1.5">
+          <a href="" class="flex items-center  justify-center">
+            <div 
+              style="background-image: url('img/internet-banking-signin.svg')"
+              class="bg-no-repeat w-32 h-10 bg-center bg-center]"
+            ></div>
+            <span class="text-white text-[15px] font-medium"
+              >Internet Banking</span
+            >
+          </a>
+        </div>
+        <div class="bg-[#0056c1] p-2">
+          <a href="" class="flex items-center justify-center">
+            <div
+              style="background-image: url('img/career-portal.svg')"
+              class="bg-no-repeat w-32 h-10 bg-center bg-center]"
+            ></div>
+            <span class="text-white text-[15px] font-medium">Career Portal</span>
+          </a>
+        </div>
+        <div class="hamslider my-8 w-full">
+          <ul class="flex gap-[20px] lg:hidden">
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >Sustainability reports</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >Charges and Fees</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >News</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >Procurement</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >Service network</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >Research</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#666] font-sans text-[14px] font-normal p-[16px] inline-block bg-[#f9f9f9]"
+                >Investor Relations</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Cards
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Loans
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Online Services
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Campaigns
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Cashback
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Deposits
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="ttext-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Mortgage
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Money transfers
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Current Account
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Payments
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+          <div class="border-t border-b border-gray-300 p-4">
+            <div
+              class="flex justify-between items-center"
+              onclick="accordion(event)"
+            >
+              <h2
+                class="text-[18px] font-normal text-[#262626] py-3 racking-tighter"
+              >
+                Charges, Fees and Standard teems
+              </h2>
+              <span
+                id="arrow"
+                class="transform transition-transform duration-300"
+                ><img src="./img/select-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div id="accordion-content" class="mt-2 space-y-2 hidden">
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Debit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Credit cards
+              </p>
+              <p class="text-[#262626] text-[16px] font-extralight font-sans pb-2">
+                Validation process for TamKart debit cards
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <main class="mt-[150px] lg:mt-[230px]">
+        <div class="">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide !flex flex-col lg:flex-row items-center justify-around p-4"
+              >
+                <div>
+                  <h3
+                    class="text-[30px] text-[#262626] font-sans font-bold pt-[48px] mb-16px lg:pt-[20px]"
+                  >
+                    ABB Biz is now at your service!
+                  </h3>
+                  <h4
+                    class="text-[#262626] text-[20px] font-sans font-medium my-8"
+                  >
+                    A mobile application designed for small businesses
+                  </h4>
+                  <a
+                    href=""
+                    class="border border-[#262626] py-[15px] px-[25px] rounded-md text-[#262626] text-2xl inline-block mt-[20px] bg-transparent hover:bg-[#262626] hover:text-white"
+                    >More details</a
+                  >
+                </div>
+                <div class="w-[500px] h-[500px]">
+                  <img
+                    class="w-[100%] h-[100%] object-cover"
+                    src="./img/slider1.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide !flex flex-col lg:flex-row items-center justify-around p-4"
+              >
+                <div>
+                  <h3
+                    class="text-[30px] text-[#262626] font-sans font-bold pt-[48px] mb-16px lg:pt-[20px]"
+                  >
+                    DigiTransfer
+                  </h3>
+                  <h4
+                    class="text-[#262626] text-[20px] font-sans font-medium my-8"
+                  >
+                    Enjoy commission-free international transfers with DigiTransfer!
+                  </h4>
+                  <a
+                    href=""
+                    class="border border-[#262626] py-[15px] px-[25px] rounded-md text-[#262626] text-2xl inline-block mt-[20px] bg-transparent hover:bg-[#262626] hover:text-white"
+                    >More details</a
+                  >
+                </div>
+                <div class="w-[500px] h-[500px]">
+                  <img
+                    class="w-[100%] h-[100%] object-cover"
+                    src="./img/slider2.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide !flex flex-col lg:flex-row items-center justify-around p-4"
+              >
+                <div>
+                  <h3
+                    class="text-[30px] text-[#262626] font-sans font-bold pt-[48px] mb-16px lg:pt-[20px]"
+                  >
+                    ABB Biz is now at your service!
+                  </h3>
+                  <h4
+                    class="text-[#262626] text-[20px] font-sans font-medium my-8"
+                  >
+                    A mobile application designed for small businesses
+                  </h4>
+                  <a
+                    href=""
+                    class="border border-[#262626] py-[15px] px-[25px] rounded-md text-[#262626] text-2xl inline-block mt-[20px] bg-transparent hover:bg-[#262626] hover:text-white"
+                    >More details</a
+                  >
+                </div>
+                <div class="w-[500px] h-[500px]">
+                  <img
+                    class="w-[100%] h-[100%] object-cover"
+                    src="./img/slider3.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide !flex flex-col lg:flex-row items-center justify-around p-4"
+              >
+                <div>
+                  <h3
+                    class="text-[30px] text-[#262626] font-sans font-bold pt-[48px] mb-16px lg:pt-[20px]"
+                  >
+                    ABB Biz is now at your service!
+                  </h3>
+                  <h4
+                    class="text-[#262626] text-[20px] font-sans font-medium my-8"
+                  >
+                    A mobile application designed for small businesses
+                  </h4>
+                  <a
+                    href=""
+                    class="border border-[#262626] py-[15px] px-[25px] rounded-md text-[#262626] text-2xl inline-block mt-[20px] bg-transparent hover:bg-[#262626] hover:text-white"
+                    >More details</a
+                  >
+                </div>
+                <div class="w-[500px] h-[500px]">
+                  <img
+                    class="w-[100%] h-[100%] object-cover"
+                    src="./img/slider4.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="actions">
+            <div class="cards lg:flex justify-between gap-[30px] my-[30px]">
+              <div
+                class="bg-white h-full shadow-lg rounded-xl p-6 flex items-center justify-between mx-auto mb-10"
+              >
+                <div>
+                  <h2 class="text-lg font-semibold text-gray-900">
+                    Tam DigiCard
+                  </h2>
+                  <p class="text-gray-600 mt-2">
+                    A digital and physical debit card with many advantages
+                  </p>
+                  <button
+                    class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                  >
+                    Order now
+                  </button>
+                </div>
+                <img
+                  src="./img/card1.webp"
+                  alt="Tam DigiCard"
+                  class="w-[95px] h-[190px]"
+                />
+              </div>
+              <div
+                class="bg-white h-full shadow-lg rounded-xl p-6 flex items-center justify-between mx-auto mb-10"
+              >
+                <div>
+                  <h2 class="text-lg font-semibold text-gray-900">
+                    Tam DigiCard
+                  </h2>
+                  <p class="text-gray-600 mt-2">
+                    A digital and physical debit card with many advantages
+                  </p>
+                  <button
+                    class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                  >
+                    Order now
+                  </button>
+                </div>
+                <img
+                  src="./img/card2.webp"
+                  alt="Tam DigiCard"
+                  class="w-[95px] h-[190px]"
+                />
+              </div>
+              <div
+                class="bg-white shadow-lg rounded-xl p-6 flex items-center justify-between mx-auto mb-10"
+              >
+                <div>
+                  <h2 class="text-lg font-semibold text-gray-900">
+                    Tam DigiCard
+                  </h2>
+                  <p class="text-gray-600 mt-2">
+                    A digital and physical debit card with many advantages
+                  </p>
+                  <button
+                    class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                  >
+                    Order now
+                  </button>
+                </div>
+                <img
+                  src="./img/card3.webp"
+                  alt="Tam DigiCard"
+                  class="w-[95px] h-[190px]"
+                />
+              </div>
+            </div>
+            <div class="cards lg:flex justify-between gap-[30px]">
+              <div
+                class="bg-white shadow-lg rounded-xl p-6 flex items-center justify-between mx-auto mb-10"
+              >
+                <div>
+                  <h2 class="text-lg font-semibold text-gray-900">
+                    Tam DigiCard
+                  </h2>
+                  <p class="text-gray-600 mt-2">
+                    A digital and physical debit card with many advantages
+                  </p>
+                  <button
+                    class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                  >
+                    Order now
+                  </button>
+                </div>
+                <img
+                  src="./img/card4.webp"
+                  alt="Tam DigiCard"
+                  class="w-[95px] h-[190px]"
+                />
+              </div>
+              <div
+                class="bg-white shadow-lg rounded-xl p-6 flex items-center justify-between mx-auto mb-10"
+              >
+                <div>
+                  <h2 class="text-lg font-semibold text-gray-900">
+                    Tam DigiCard
+                  </h2>
+                  <p class="text-gray-600 mt-2">
+                    A digital and physical debit card with many advantages
+                  </p>
+                  <button
+                    class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                  >
+                    Order now
+                  </button>
+                </div>
+                <img
+                  src="./img/card5.webp"
+                  alt="Tam DigiCard"
+                  class="w-[95px] h-[190px]"
+                />
+              </div>
+              <div
+                class="bg-white shadow-lg rounded-xl p-6 flex items-center justify-between mx-auto mb-10"
+              >
+                <div>
+                  <h2 class="text-lg font-semibold text-gray-900">
+                    Tam DigiCard
+                  </h2>
+                  <p class="text-gray-600 mt-2">
+                    A digital and physical debit card with many advantages
+                  </p>
+                  <button
+                    class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                  >
+                    Order now
+                  </button>
+                </div>
+                <img
+                  src="./img/card6.webp"
+                  alt="Tam DigiCard"
+                  class="w-[95px] h-[190px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="credit py-10 bg-[#f9f9f9] h-full">
+          <div class="container">
+            <div class="credit_limit lg:flex justify-between items-center py-6">
+              <div class="basis-[50%]">
+                <h2 class="text-5xl text-[#262626] font-bold">
+                  Find out your credit limit:
+                </h2>
+                <p class="text-xl text-[#262626] font-medium my-6">
+                  Get a loan up to 40 000 AZN without commission!
+                </p>
+                <form action="#">
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="Pin code"
+                      class="border border-gray-300 w-full p-3 mb-4 rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="Mobil phone number"
+                      class="border border-gray-300 w-full p-3 rounded-md"
+                    />
+                  </div>
+                  <div class="flex gap-[20px] my-4 w-full">
+                    <input
+                      type="checkbox"
+                      class="w-5 h-5 bg-[#2058bb]"
+                      id="inp1"
+                    />
+                    <p class="text-[#5b5c5e] text-[16px] font-normal">
+                      I agree to provide ABB with data about my loan history
+                      from <a href="">Azerbaijan Credit Bureau</a> and to
+                      provide with my identity document, place of work, salary
+                      and other information through
+                      <a href="">ASAN Finance/E-GOV</a>system
+                    </p>
+                  </div>
+                  <button
+                    id="btn1"
+                    class="bg-[#d6d9de] p-3 text-[#f3f6fa] font-medium w-full text-2xl rounded-md"
+                  >
+                    Continue
+                  </button>
+                </form>
+              </div>
+              <div class="basis-[50%]">
+                <img
+                  src="./img/credit_limit.webp"
+                  alt=""
+                  class="w-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="container">
+             <h2 class="my-6 text-3xl text-[#262626] font-bold">
+        Loan Calculator
+      </h2>
+      <div class="commons lg:flex justify-between items-baseline ">
+        
+        <div class="loans basis-[40%]">
+          <div class="loan mb-6">
+            <div
+              class="loan_com w-full p-1.5 border border-gray-300 rounded-md"
+            >
+              <div class="flex justify-between p-2 w-full">
+                <span class="text-[#666] text-xl">Loan Amount</span>
+                <span class="text-xsl text-[#262626] font-medium" id="amount">AZN</span>
+              </div>
+            </div>
+            <input
+                type="range"
+                id="loanAmount"
+                class="w-full"
+                min="300"
+                max="40000"
+                step="100"
+                value="3000"
+              />
+            <div class="amount my-4 flex justify-between">
+              <span class="text-[#262626] text-[18px]">300</span>
+              <span class="text-[#262626] text-[18px]">40000</span>
+            </div>
+          </div>
+          <div class="loan mb-6">
+            <div
+              class="loan_com w-full p-1.5 border border-gray-300 rounded-md"
+            >
+              <div class="flex justify-between p-2 w-full">
+                <span class="text-[#666] text-xl">Loan term</span>
+                <span class="text-xl text-[#262626] font-medium" id="month">months</span>
+              </div>
+            
+            </div>
+            <input
+                type="range"
+                id="loanTerm"
+                class="w-full"
+                min="3"
+                max="59"
+                step="1"
+                value="36"
+              />
+            <div class="amount my-4 flex justify-between">
+              <span class="text-[#262626] text-[18px]">3 months</span>
+              <span class="text-[#262626] text-[18px]">59 months</span>
+            </div>
+          </div>
+          <div class="loan mb-6">
+            <div
+              class="loan_com w-full p-1.5 border border-gray-300 rounded-md"
+            >
+              <div class="flex justify-between p-2 w-full">
+                <span class="text-[#666] text-xl">Interest rate</span>
+                <span class="text-[18px] text-[#262626] font-medium " id="percent">%</span>
+              </div>
+            </div>
+            <input
+                type="range"
+                id="interestRate"
+                class="w-full"
+                min="10.9"
+                max="31.9"
+                step="0.1"
+                value="10.9"
+              />
+            <div class="amount my-4 flex justify-between">
+              <span class="text-[#262626] text-xl">10.9%</span>
+              <span class="text-[#262626] text-xl"></span>
+            </div>
+          </div>
+        </div>
+        <div class="calculate basis-[30%]">
+          <div
+            class="flex justify-between border-b border-b-gray-400 p-10 gap-[20px] lg:flex-col"
+          >
+            <div>
+              <span
+                id="monthlyPayment"
+                class="block text-[#262626] text-2xl font-bold mb-4"
+                >0 ₼</span
+              >
+              <span class="block text-[#262626] text-xl">Monthly payment</span>
+            </div>
+            <div>
+              <span
+                id="totalPayment"
+                class="block text-[#262626] text-2xl font-bold mb-4"
+                >0 ₼</span
+              >
+              <span class="block text-[#262626] text-xl">Total amount</span>
+            </div>
+          </div>
+          <div class="initial my-6">
+            <span class="text-[#7f7f7f] text-xl">Initial calculation</span>
+            <div
+              class="bg-[#2058bb] py-[15px] px-[25px] w-full rounded-md text-center my-8 lg:w-[50%]"
+            >
+              <a href="#" class="text-white text-xl font-medium">Get a loan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            </div> 
+          </div>
+        </div>
+        <div class="bg-[#f5f5f5] h-full py-20">
+          <div class="container">
+            <h2 class="text-black font-sans text-[30px] font-bold mb-5">Services</h2>
+            <div class="w-full px-4">
+        <div class="flex lg:flex-wrap lg:justify-between  overflow-x-auto space-x-4 lg:space-x-0 py-4 scrollbar-hide">
+            <div class="min-w-[200px] bg-white shadow-md rounded-lg p-12 text-center flex flex-col justify-between ">
+                <img src="./img/service1.webp"  class="w-16 h-16 mx-auto mb-2">
+                <p class="text-lg font-semibold">Offices & ATMs</p>
+            </div>
+            <div class="min-w-[200px] bg-white shadow-md rounded-lg p-12 text-center flex flex-col justify-between">
+                <img src="./img/service2.webp"  class="w-16 h-16 mx-auto mb-2">
+                <p class="text-lg font-semibold">Online appointment</p>
+            </div>
+            <div class="min-w-[200px] bg-white shadow-md rounded-lg p-12 text-center flex flex-col justify-between ">
+                <img src="./img/service3.webp"  class="w-16 h-16 mx-auto mb-2">
+                <p class="text-lg font-semibold">Call Centerr</p>
+            </div>
+            <div class="min-w-[200px] bg-white shadow-md rounded-lg p-12 text-center flex flex-col justify-between ">
+                <img src="./img/service4.webp"  class="w-16 h-16 mx-auto mb-2">
+                <p class="text-lg font-semibold">Loan Payment</p>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+        <div class="container1 py-[100px]">
+          <h3 class="text-[#262626] text-[22px] font-medium lg:text-[36px] mt-[50px] mb-3">Currency rates</h3>
+          <span class="text-xs text-[#666] font-medium">Last updated 31.01.2025</span>
+          <div class="currency my-5 lg:flex justify-between  items-baseline  ">
+            <div class="rates w-full ">
+              <table class="border-b border-b-gray-200 py-6 ">
+                <tbody>
+                  <tr >
+                    <th class="w-[200px] text-left text-[16px] text-[#262626]">Currency</th>
+                    <th class="w-[150px] text-left text-[16px] text-[#262626]">Sell</th>
+                    <th class="w-[150px] text-left text-[16px] text-[#262626]">Buy</th>
+                  </tr>
+                  <tr >
+                    <td class="p-3" ><span class="text-[24px] text-[#262626] font-bold lg:text-36[px] ">USD</span></td>
+                    <td class="p-3" ><span class="text-[24px] text-[#262626] lg:text-36[px]" >1.7020</span></td>
+                    <td class="p-3"><span class="text-[24px] text-[#262626] lg:text-36[px]" >1.7020</span></td>
+             
+                  </tr>
+                  <tr >
+                    <td class="p-3"><span class="text-[24px] text-[#262626] font-bold lg:text-64[px] ">EUR</span></td>
+                    <td class="p-3"><span class="text-[24px] text-[#262626] lg:text-36[px]">1.7747🔻</span></td>
+                    <td class="p-3"><span class="text-[24px] text-[#262626] lg:text-36[px]">1.7306🔻</span></td>
+                  </tr>
+                  <tr >
+                    <td class="p-3"><span class="text-[24px] text-[#262626] font-bold lg:text-36[px] "> 100 RUB</span></td>
+                    <td class="p-3"><span class="text-[24px] text-[#262626] lg:text-36[px]">1.9900</span></td>
+                    <td class="p-3"><span class="text-[24px] text-[#262626] lg:text-36[px]">1.4700</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="" class="text-[15px] font-medium text-[#262626] lg:text-[16px] my-6 inline-block">All curency rates ˃</a>
+            </div>
+            
+            <div class="converter basis-[50%] ">
+              <h4 class="text-[#262626] text-[20px] font-medium lg:text-[24px] py-5">Currency conventer</h4>
+              <div class="p-[16px] border border-gray-300 w-full rounded-md">
+                <div class="flex  justify-between w-full">
+                  <label for=""  >
+                    <input type="number" class="text-[16px] text-[#666] " id="sellinp"  placeholder="I would to like to sell">
+                   </label>
+                  <div > 
+                  <select name="" id="sellselect" >
+                    <option value="USD">USD</option>
+                    <option value="AZN">AZN</option>
+                    <option value="RUB">RUB</option>
+                    <option value="EUR">EUR</option>
+                  </select></div>
+                </div>
+              </div>
+              <div class="p-[16px] border border-gray-300 w-full rounded-md mt-[15px]">
+                <div class="flex justify-between w-full">
+                  <label for="" >
+                    <input type="number" class="text-[16px] text-[#666]  " id="getinp" placeholder="I will get">
+                   </label>
+                  <div > 
+                  <select name="" id="getselect" >
+                    <option value="USD">USD</option>
+                    <option value="AZN">AZN</option>
+                    <option value="RUB">RUB</option>
+                    <option value="EUR">EUR</option>
+                  </select></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f5f5f5]  p-[40px]">
+          <div class="container">
+            <div class="flex justify-between items-baseline mb-5">
+              <h2 class="text-[26px] text-black font font-medium lg:text-[30px] ">News</h2>
+              <span class="text-[15px] font-medium">All news</span>
+            </div>
+            <div class="news grid grid-cols-1 lg:flex lg:justify-between lg:gap-[20px]">
+              
+              <a href="#" class="w-full flex flex-col gap-[64px] mb-5 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h3 class="mb-2 text-[17px] font-medium tracking-tight dark:text-white">
+                  Abbas İbrahimov: “Bu il ilk dəfə olaraq 35 mindən artıq səhmdarımızla, vətəndaşlarımızla gəlirlərimizi bölüşəcəyik”
+                </h3>
+                <p class="font-normal text-gray-700 dark:text-gray-400">17.01.2025</p>
+              </a>
+
+              <a href="#" class="w-full flex flex-col gap-[64px] mb-5 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h3 class="mb-2 text-[17px] font-medium tracking-tight dark:text-white">
+                  Abbas İbrahimov: “Bu il ilk dəfə olaraq 35 mindən artıq səhmdarımızla, vətəndaşlarımızla gəlirlərimizi bölüşəcəyik”
+                </h3>
+                <p class="font-normal text-gray-700 dark:text-gray-400">17.01.2025</p>
+              </a>
+
+               <a href="#" class="w-full flex flex-col gap-[64px] mb-5 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h3 class="mb-2 text-[17px] font-medium tracking-tight dark:text-white">
+                  ABB biznes proseslərində SİMA İmza-nın geniş tətbiqinə başladı                </h3>
+                <p class="font-normal text-gray-700 dark:text-gray-400">17.01.2025</p>
+              </a>
+          </div>
+          </div>
+        </div> 
+        <div class="container">
+                        <h2 class="text-[26px] font-medium lg:text-[30px] py-5">Digital products</h2>
+                    <div class="mx-auto px-4 py-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
+                
+                <div class="flex flex-col lg:flex-row items-center bg-[#1461c5] text-white p-6 rounded-3xl shadow-md">
+                  <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-4">ABB mobile</h3>
+                    <p class="mb-6">Simple and fast banking application service that you can use anytime and anywhere.</p>
+                    <div class="flex space-x-4">
+                      <i class="fa-brands fa-google-play text-[30px]"></i>
+                      <i class="fa-brands fa-apple text-[30px]"></i>
+                      <i class="fa-brands fa-huawei text-[30px]"></i>
+                    </div>
+                  </div>
+                  <div class="flex-1 mt-4 lg:mt-0">
+                    <img src="./img/digital1.webp"  class="w-full max-w-xs lg:max-w-sm mx-auto">
+                  </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center bg-[#0024a3] text-white p-6 rounded-3xl shadow-md">
+                  <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-4">Carry out your business transactions</h3>
+                    <p class="mb-6">With ABB Business Internet Bank.</p>
+                    <button class="bg-white text-black px-4 py-2 rounded-lg font-medium">Get started</button>
+                  </div>
+                  <div class="flex-1 mt-4 lg:mt-0">
+                    <img src="./img/digital2.webp" alt="Business Internet Bank" class="w-full max-w-xs lg:max-w-sm mx-auto">
+                  </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center bg-[#114090] text-white p-6 rounded-3xl shadow-md">
+                  <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-4">Business convenience</h3>
+                    <p class="mb-6">Speed up your business process with ABB mobile POS service.</p>
+                    <i class="fa-brands fa-google-play text-[30px]"></i>
+                  </div>
+                  <div class="flex-1 mt-4 lg:mt-0">
+                    <img src="./img/digital3.webp"  class="w-full max-w-xs lg:max-w-sm mx-auto">
+                  </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center bg-[#096ceb] text-white p-6 rounded-3xl shadow-md">
+                  <div class="flex-1">
+                    <h3 class="text-xl font-semibold mb-4">Investment opportunities</h3>
+                    <p class="mb-6">Wide range of opportunities for buying and selling shares and investment fund shares.</p>
+                    <button class="bg-white text-black  px-4 py-2 rounded-lg font-medium">Learn more</button>
+                  </div>
+                  <div class="flex-1 mt-4 lg:mt-0">
+                    <img src="./img/digital4.webp"  class="w-full max-w-xs lg:max-w-sm mx-auto">
+                  </div>
+                </div>
+              </div>
+                </div>
+           <div class="border-t border-gray-300 p-5">
+            <div class="container">
+              <div class=" flex justify-between">
+                <a href=""><img src="./img/logo.svg" alt=""></a>
+                <a href="" class="block lg:hidden">
+                  <span><i class="fa-solid fa-phone text-[12px] text-[#666]"></i></span>
+                  <span class="text-[18px] text-[#666]">937</span>
+                </a>
+                <a href="" class=" hidden lg:flex items-center justify-center">
+            <div
+              style="
+                background-image: url('img/internet-banking-signin\ 2.svg');
+              "
+              class="bg-no-repeat w-20 h-10 bg-center bg-center]"
+            ></div>
+            <span class="text-[#262626] text-[15px] font-medium"
+              >Internet Banking</span
+            >
+          </a>
+              </div>
+            </div>
+           </div>
+      </main>
+      <footer class="bg-[#f5f5f5]">
+        <div class="container">
+          <div >
+            <ul class="flex flex-wrap gap-[15px] py-8 lg:hidden">
+            <li>
+              <a href="" class="text-[#262626] font-sans font-semibold"
+                >Personal</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold"
+                >Small Business</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">SME</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold"
+                >Corporate</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold">/</a>
+            </li>
+            <li>
+              <a href="" class="text-[#7b7878] font-sans font-semibold"
+                >Investor relations</a
+              >
+            </li>
+          </ul>
+          </div>
+
+          <div class=" hidden lg:flex py-[40px] justify-between">
+            <div>
+              <h4 class="text-[17px] text-[#262626] mt-[10px] pr-[16px] font-medium" >Personal</h4>
+              <ul>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Cards</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Loans</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Online Services</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Campaigns</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Cashback</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Deposits</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Mortgage</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Money transfers</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Currrent account</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Payments</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Q&A section</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Charges,Fees and Standard Terms</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-[17px] text-[#262626] mt-[10px] pr-[16px] font-medium">About us</h4>
+              <ul>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Mission and strategic vision</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Management</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Information disclosure</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Brand center</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Ownership in subsidiaries and associate compaines</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Correspondent Banks</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Financilamonitoring and compliance</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Human Resources</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Corporate Social Responsibility</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Our policies</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Awards</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Proposals and compaines</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[17px] text-[#262626] mt-[10px] pr-[16px] font-medium">Small Business</h4>
+              <ul>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Online loans</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Payment sysytems</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Daily banking</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">E-muhasibim</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Personal relationship management</a></li>
+                
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[17px] text-[#262626] mt-[10px] pr-[16px] font-medium">Investor Relations</h4>
+              <ul>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Acquire ABB shares from ABB mobile!</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Reports</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Shareholders</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Ratings</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Corporate presentations</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Other information</a></li>
+                
+              </ul>
+            </div>
+             <div>
+              <h4 class="text-[17px] text-[#262626] mt-[10px] pr-[16px] font-medium">SME</h4>
+              <ul>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Business loans</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Open account online</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">ABB link</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Service packages</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Cards</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Trade finanace</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Transfers</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">E-banking</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Accounts</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Depostis</a></li>
+               
+              </ul>
+            </div>
+
+             <div >
+              <h4 class="text-[17px] text-[#262626] mt-[10px] pr-[16px] font-medium">Corporate</h4>
+              <ul>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Corporate loans</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Open account online</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Cards</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Salary project</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Trade finanace</a></li>
+                 <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">E-banking</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Transfers</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Accounts</a></li>
+                <li><a href="" class="text-[#666] text-[15px] font-normal mb-3 inline-block hover:underline">Depostis</a></li>
+               
+              </ul>
+            </div>
+          </div>
+          <div class="contacts">
+            <h4 class="text-[17px] text-[#262626] font-medium my-2 ">Contacts</h4>
+            <p class="text-[17px] text-[#262626] mb-2 font-light">67, Nizami str., AZ1005 Baku, Azerbaijan</p>
+            <p class="text-[17px] text-[#262626] mb-2 font-light">
+              <span>Tel:</span>
+              <a href="">(+994 12) 493 00 91</a>
+            </p>
+            <p class="text-[17px] text-[#262626] mb-2 font-light">
+              <span>Fax:</span>
+              <a href="">(+994 12) 493 40 91</a>
+            </p>
+            <p class="text-[17px] text-[#262626] mb-2 font-light">
+              <span>E-mail:</span>
+              <a href="">info@abb-bank.az</a>
+            </p>
+
+             <a href="" class="hidden lg:block py-6">
+                  <span><i class="fa-solid fa-phone text-[12px] text-[#262626]"></i></span>
+                  <span class="text-[18px] text-[#262626]">937</span>
+                </a>
+          </div>
+
+          <div class="social flex gap-[15px] py-6 lg:hidden">
+            <a href="" class=" w-[48px] h-[48px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-instagram text-[#666] text-[20px]"></i></a>
+            <a href="" class=" w-[48px] h-[48px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-facebook-f text-[#666] text-[20px]"></i></a>
+            <a href="" class=" w-[48px] h-[48px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-youtube text-[#666] text-[20px]"></i></a>
+            <a href="" class=" w-[48px] h-[48px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-threads text-[#666] text-[20px]"></i></a>
+            <a href="" class=" w-[48px] h-[48px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-linkedin-in text-[#666] text-[20px]"></i></a>
+            
+          </div>
+          <div class="download flex flex-wrap gap-4">
+            <a href="" class="flex gap-2.5 p-4 items-center bg-[#ececec] text-[#666] rounded-md  ">
+              <i class="fa-brands fa-apple text-[24px]"></i>
+              <div>
+                <span class="text-[9px] font-medium">Download</span>
+                <p class="text-[14px] font-medium">App Store</p>
+              </div>
+            </a>
+            <a href="" class="flex gap-2.5 p-4 items-center bg-[#ececec] text-[#666] rounded-md  ">
+              <i class="fa-brands fa-apple text-[24px]"></i>
+              <div>
+                <span class="text-[9px] font-medium">Download</span>
+                <p class="text-[14px] font-medium">App Store</p>
+              </div>
+            </a>
+            <a href="" class="flex gap-2.5 items-center p-4 bg-[#ececec] text-[#666] rounded-md  ">
+              <i class="fa-brands fa-apple text-[24px]"></i>
+              <div>
+                <span class="text-[9px] font-medium">Download</span>
+                <p class="text-[14px] font-medium">App Store</p>
+              </div>
+            </a>
+          </div>
+         
+          <div class="flex mt-5 items-center gap-[10px] lg:hidden">
+            <a href="" ><img src="./img/logo-infobank.webp" alt="" class="w-[30px]"></a>
+            <a href="" ><img src="./img/logo-msp.webp" alt="" class="w-[50px]"></a>
+            <a href="" ><img src="./img/logo-virtual-qarabag.webp" alt="" class="w-[35px]"></a>
+            <a href="" ><img src="./img/yenilogo.webp" alt="" class="w-[45px]"></a>
+          </div>
+          <p class="text-xs text-[#585858] py-3 lg:hidden">© ABB - All rights reserved</p>
+         
+          <div class="hidden lg:flex justify-between items-center">
+            <p class="text-xs text-[#585858] py-3">© ABB - All rights reserved</p>
+            <div class="flex mt-5 items-center gap-[10px]">
+            <a href="" ><img src="./img/logo-infobank.webp" alt="" class="w-[30px]"></a>
+            <a href="" ><img src="./img/logo-msp.webp" alt="" class="w-[50px]"></a>
+            <a href="" ><img src="./img/logo-virtual-qarabag.webp" alt="" class="w-[35px]"></a>
+            <a href="" ><img src="./img/yenilogo.webp" alt="" class="w-[45px]"></a>
+          </div>
+
+          <div class="flex gap-[20px]">
+            <div class="social flex gap-[15px] justify-end py-6">
+            <a href="" class=" w-[30px] h-[30px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-instagram text-[#666] text-[16px]"></i></a>
+            <a href="" class=" w-[30px] h-[30px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-facebook-f text-[#666] text-[16px]"></i></a>
+            <a href="" class=" w-[30px] h-[30px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-youtube text-[#666] text-[16px]"></i></a>
+            <a href="" class=" w-[30px] h-[30px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-threads text-[#666] text-[16px]"></i></a>
+            <a href="" class=" w-[30px] h-[30px] rounded-[50%] bg-[#e0dcdc] flex justify-center items-center "><i class="fa-brands fa-linkedin-in text-[#666] text-[16px]"></i></a>
+            
+          </div>
+          <select name="" id="">
+            <option value="EN">EN</option>
+            <option value="AZ">AZ</option>
+            <option value="RU">RU</option>
+          </select>
+          </div>
+          
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+
+</html>
